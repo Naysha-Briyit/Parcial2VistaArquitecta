@@ -1,0 +1,25 @@
+{
+  "name": "parcial2vistaarquitecta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naysha-Briyit/Parcial2VistaArquitecta.git"
+  },
+  "author": "Naysa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naysha-Briyit/Parcial2VistaArquitecta/issues"
+  },
+  "homepage": "https://github.com/Naysha-Briyit/Parcial2VistaArquitecta#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "request": "^2.88.2"
+  }
+}

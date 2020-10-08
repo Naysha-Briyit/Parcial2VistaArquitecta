@@ -1,0 +1,13 @@
+h1  Cursos del alumno 
+h1  =idStudent
+    table
+        thead
+            th N
+            th  Codigo 
+            th   Nombre
+        tbody
+            each course, index in courses
+            tr
+                td=index+1
+                td=course.id
+                td=course.name

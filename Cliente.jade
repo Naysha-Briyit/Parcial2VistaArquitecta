@@ -1,0 +1,53 @@
+h1  Cursos
+    table
+        thead
+            th N
+            th  Codigo 
+            th   Nombre
+        tbody
+            each course, index in courses
+            tr
+                td=index+1
+                td=course.id
+                td=course.name
+
+
+h2 Consultar Cursos Matriculados de Estudiante
+div
+    form(action='/consultar/matricula',method='post')
+        div(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+                label(for='idStudent') ID del Alumno:
+                    input(id='idStudent',type='number',value='',name='idStudent') 
+        div(data-role='fieldcontain')   
+            input(type='submit',value='Consultar Lista de Cursos Matriculados',data-transition='fade', data-theme='c')
+h2 Matricular Alumno en Curso
+div
+    form(action='/pagarCurso',method='post')
+        div(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+                label(for='idStudent') ID del Alumno:
+                    input(id='idStudent',type='number',value='',name='idStudent') 
+        div(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+                label(for='idCourse') Codigo de Curso:
+                    input(id='idCourse',type='number',value='',name='idCourse') 
+        div(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+                label(for='payment') Pago:
+                    input(id='idCourse',type='number',value='',name='payment') 
+        div(data-role='fieldcontain')   
+            input(type='submit',value='Matricular',data-transition='fade', data-theme='c')
+h2 Matricular Alumno en Curso
+div
+    form(action='/matricular',method='post')
+        div(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+                label(for='idStudent') ID del Alumno:
+                    input(id='idStudent',type='number',value='',name='idStudent') 
+        div(data-role='fieldcontain')
+            fieldset(data-role='controlgroup')
+                label(for='idCourse') Codigo de Curso:
+                    input(id='idCourse',type='number',value='',name='idCourse') 
+        div(data-role='fieldcontain')   
+            input(type='submit',value='Matricular',data-transition='fade', data-theme='c')
